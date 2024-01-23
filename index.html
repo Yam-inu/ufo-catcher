@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>遠隔操作用ページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="/webiopi.js"></script>
+<script type="text/javascript" src="motor.js"></script>
+<style>
+  /* スタイルの追加 */
+  .button-row {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    vertical-align: top;
+  }
+
+  .a, .b, .c, .d, .e {
+    display: block;
+  }
+</style>
+</head>
+<body>
+<main>
+	<img src="http://192.168.11.2:8080/?action=stream" width="60%" height="45%">
+	<button id="forward" class="button">1</button>
+        <button id="left" class="button">2</button>
+</main>
+</body>
+</html>
