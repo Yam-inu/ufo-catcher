@@ -8,7 +8,7 @@
 #ユーザディレクトリを英語に変更
 LC_ALL=C xdg-user-dirs-update --force
 cd
-rm -r デスクトップ ダウンロード テンプレート 公開 ドキュメント 音楽 ビデオ
+rm -r ダウンロード テンプレート 公開 ドキュメント 音楽 ビデオ 画像
 
 
 sudo apt update
