@@ -20,6 +20,11 @@ mv *.* original_file
 cd /home/pi/ufo-catcher
 mv index.html raspi_car_sp.py motor.js ./webIOPi-0.7.1/htdocs/
 
+# configファイルの入れ替え
+cd /etc/webiopi
+sudo mv config config.org
+sudo mv /home/pi/ufo-catcher/config ./
+
 # 設定の完了のために再起動
 #!/bin/bash
 
