@@ -7,6 +7,7 @@ FRAMERATE="30"       #フレームレート
 
 #webiopiスタート
 echo "start webiopi"
+sudo systemctl stop webiopi
 sudo systemctl start webiopi
 
 #mjpg-streamerスタート
