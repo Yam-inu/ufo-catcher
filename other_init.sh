@@ -19,3 +19,16 @@ mkdir original_file
 mv *.* original_file
 cd /home/pi/ufo-catcher
 mv index.html raspi_car_sp.py motor.js ./webIOPi-0.7.1/htdocs/
+
+# 設定の完了のために再起動
+#!/bin/bash
+
+echo "更新の完了にはRaspberry Piの再起動が必要です"
+echo "今すぐ再起動しますか？ yes/no"
+read str
+if [ ${str} = "yes" ]; then
+  sudo reboot
+elif [ ${str} = "no" ]; then
+  echo "再起動できるようにし、以下のコマンドを自分で実行してください"
+  echo "sudo reboot"
+fi
